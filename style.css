@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+  font-family: 'Scriptina';
+  src: url("../fonts/scriptina-regular.ttf");
+}
+.logo{
+    font-family: papyrus;
+    color: white;
+    margin: 7px;
+    
+}
+.intro{
+    text-align: center;
+    font-size: 40px;
+    margin: 3%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  nav,ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+    padding: 0 10%;
+    background: rgba(4, 56, 88, 0.986);
+    
+    
+  }
+ 
+  header nav .main-nav {
+    width: 60%;
+  }
+  .main-nav li a {
+    font-family:  MS UI Gothic ;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .main-nav a:hover {
+    color: #8e8400;
+  }
+ 
+  @media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+      }
+      .main-nav {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      .intro {
+        text-align: center;
+        overflow: auto;
+
+      }
+     
+  }
+
+  .intro h1{
+    margin: 150px 0 0 0;
+  font-family: Libre Baskerville;
+    font-size: 4rem;
+    color:  rgb(108, 2, 2);
+  }
+ 
+  .intro p {
+    max-width: 450px;
+    font-family: 'Scriptina';
+    margin: 130px auto;
+    font-size: 1.5rem;
+   color:  rgb(108, 2, 2);
+  }
+  .products{
+    margin-top: 180px;
+    background: rgba(255, 238, 206, 0.612);
+    height: 80%;
+    padding: 25px 25px 25px;
+   
+  }
+
+  /*Menus*/
+
+  .products-container{
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 2% 2% 0%;
+  }
+  .products-container2{
+    width: 100%;
+
+    box-sizing: border-box;
+  
+  }
+  .products-container2 img{
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    padding:10% 10% 0;
+  }
+  .products-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 4%;
+    padding: 3% 0;
+  }
+  .products-items-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 4%;
+    padding: 3% 0;
+  }
+  .products-items-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 4%;
+    padding: 3% 0;
+  }
+  .img-item-container{
+    cursor: pointer;
+    position: relative;
+    display: block;
+  }
+  .img-container{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .none{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+  }
+  .img-container img{
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+  }
+  .img-container2 img{
+    height: 30%;
+    width: 100%;
+   
+  }
+  .img-description{
+  color: rgb(118, 53, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  }
+  .img-description2{
+    color: rgb(118, 53, 0);
+    margin-top: 10%;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    }
+    .img-description3{
+      color: rgb(118, 53, 0);
+      margin-top: 10%;
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-left: 10%;
+      font-weight: bold;
+      }
+      .img-description4{
+        color: rgb(118, 53, 0);
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        }
+
+  .img-container3 img{
+    height: 472px;
+     }
+  .img-container4 img{
+    height: 300px;
+    margin-left: 5%;
+  }
+
+  @media screen and (max-width: 500px){
+   
+    .products-container{
+      height: 1000px;
+    }
+    .img-description{
+      margin-top: -5%;
+    }
+    .img-description3{
+    margin-left: 36%;
+    }
+    .img-description4{
+      margin-top: 5%;
+      }
+    .products-items-container{
+      grid-template-columns: minmax(300px, 500px);
+    }
+    .img-container img{
+      margin-top: 5%;
+      height: 70%;
+      width: 70%;
+      margin-left: 13%;
+    }
+    .img-container3 img{
+     margin-top: -10%;
+     height: 70%;
+     width: 75%;
+     margin-left: 13%;
+    }
+    .img-container2 img{
+      margin-top: 3%;
+      height: 50%;
+      width: 70%;
+      margin-left: 17%;
+    }
+    .img-container4 img{
+      margin-top: 21%;
+      margin-left: 22%;
+      height: 15rem;
+      width: 58%;
+    }
+   
+    .products-items-container1{
+      grid-template-columns: minmax(400px, 600px);
+    }
+ .img-container0 img{
+   margin-top: -40%;
+  width: 20rem;
+  margin-left: 12%;
+ }
+    .products-items-container2{
+      grid-template-columns: minmax(400px, 600px);
+    }
+
+  }
+
+
+  
+  /*About*/
+
+  .about-section, .products-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .about-container p{
+    font-family: papyrus;
+    color: rgba(4, 56, 88, 0.986);
+    
+
+  }
+  .section-id{
+    padding-top: 10%;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(118, 53, 0);
+    font-weight: 700;
+  }
+  .about-container{
+    box-sizing: border-box;
+    padding: 5% 10%;
+  }
+  .content-about-location{
+    font-size: 25px;
+  
+  }
+  .content-about-info{
+    font-size: 25px;
+    
+  }
+  
+  .content-about-subtitle{
+    font-size: 20px;
+    margin-top: 5%;
+  }
+  .content-about-description{
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /*footer*/
+footer{
+  background: rgb(49, 49, 49);
+  width: 100%;
+  height: 40%;
+  padding: 5px;
+}
+footer p{
+  color: rgb(209, 206, 206);
+  text-align: center;
+  font-size: small;
+  font-family: Libre Baskerville;
+}
+
+@media screen and (max-width:800px){
+
+  .img-container3 img{
+   height: 17rem;
+  }
+  .img-container4 img{
+    height: 14rem;
+   }
+   .img-description2{
+    margin-top: 50%;
+  }
+}
+
+@media screen and (max-width:700px){
+
+  .img-container img{
+    height: 7rem;
+    margin-left: 5%;
+  }
+  .img-container3 img{
+   height: 13.5rem;
+  }
+  .img-container4 img{
+    height: 12rem;
+   }
+   .img-description2{
+     margin-top: 40%;
+   }
+   
+}
+
